@@ -1,0 +1,62 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Calcu home"><span class="brand-icon">÷</span> Calculator</a>
+    </header>
+
+    <section class="calculator-card" aria-label="Calculator">
+      <div class="calculator-heading">
+        <div>
+          <p class="eyebrow">SIMPLE TOOLS, BIG IDEAS</p>
+          <h1>Calculator</h1>
+        </div>
+        <span class="online-dot" aria-label="Ready"></span>
+      </div>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div class="previous-operand" id="previous-operand"></div>
+        <output class="current-operand" id="current-operand">0</output>
+      </div>
+
+      <div class="keypad" aria-label="Calculator keys">
+        <button class="key key-muted" data-action="clear" type="button">AC</button>
+        <button class="key key-muted" data-action="delete" type="button" aria-label="Delete last digit">⌫</button>
+        <button class="key key-muted" data-action="operator" data-value="÷" type="button">÷</button>
+        <button class="key key-operator" data-action="operator" data-value="×" type="button">×</button>
+
+        <button class="key" data-action="digit" data-value="7" type="button">7</button>
+        <button class="key" data-action="digit" data-value="8" type="button">8</button>
+        <button class="key" data-action="digit" data-value="9" type="button">9</button>
+        <button class="key key-operator" data-action="operator" data-value="−" type="button">−</button>
+
+        <button class="key" data-action="digit" data-value="4" type="button">4</button>
+        <button class="key" data-action="digit" data-value="5" type="button">5</button>
+        <button class="key" data-action="digit" data-value="6" type="button">6</button>
+        <button class="key key-operator" data-action="operator" data-value="+" type="button">+</button>
+
+        <button class="key" data-action="digit" data-value="1" type="button">1</button>
+        <button class="key" data-action="digit" data-value="2" type="button">2</button>
+        <button class="key" data-action="digit" data-value="3" type="button">3</button>
+        <button class="key key-equals" data-action="equals" type="button">=</button>
+
+        <button class="key key-zero" data-action="digit" data-value="0" type="button">0</button>
+        <button class="key" data-action="decimal" type="button">.</button>
+      </div>
+      <p class="keyboard-hint">Tip: use your keyboard, too.</p>
+    </section>
+
+    <footer>Made for the little calculations that add up.</footer>
+  </main>
+
+</body>
+</html>
